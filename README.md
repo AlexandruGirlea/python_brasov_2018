@@ -1,6 +1,6 @@
 # Python Brașov 2018
 
-Python course materials from Brașov, Romania, delivered in 2018 by TransylvanianAcademy in collaboration with AgileHub. This repository is a historical reference to the course, with 26 notebooks covering Python fundamentals, data analysis, object-oriented programming, and testing.
+Python course materials from Brașov, Romania, delivered in 2018 by Alex Girlea in collaboration with AgileHub. This repository is a historical reference to the course, with 26 notebooks covering Python fundamentals, data analysis, object-oriented programming, and testing.
 
 **English edition:** this branch · **Original Romanian edition:** [romanian](https://github.com/AlexandruGirlea/python_brasov_2018/tree/romanian)
 
