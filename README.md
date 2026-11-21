@@ -1,6 +1,6 @@
 # Python Brasov 2018
 
-Acesta este prima parte a cursului care fost predat de catre TransylvanianAcademy in colaborare cu AgileHub in 2018.
+Aceasta este prima parte a cursului predat de Alex Girlea în colaborare cu AgileHub în 2018.
 
 Imagini curs: 
 https://www.linkedin.com/posts/agilehub_python-it-comunitate-activity-6508984711979757568-NbfW/
