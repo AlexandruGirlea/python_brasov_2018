@@ -1,4 +1,4 @@
-# Python Brasov 2018 - https://www.transylvanianacademy.com/
+# Python Brasov 2018
 
 Acesta este prima parte a cursului care fost predat de catre TransylvanianAcademy in colaborare cu AgileHub in 2018.
 
