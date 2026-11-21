@@ -1,91 +1,47 @@
-# Python Brasov 2018
+# Python Brașov 2018
 
-Acesta este prima parte a cursului care fost predat de catre TransylvanianAcademy in colaborare cu AgileHub in 2018.
+Python course materials from Brașov, Romania, delivered in 2018 by TransylvanianAcademy in collaboration with AgileHub. This repository is a historical reference to the course, with 26 notebooks covering Python fundamentals, data analysis, object-oriented programming, and testing.
 
-Imagini curs: 
-https://www.linkedin.com/posts/agilehub_python-it-comunitate-activity-6508984711979757568-NbfW/
-https://www.facebook.com/agilehub/photos/pcb.1030748847087095/1030748753753771/?type=1&theater
+**English edition:** this branch · **Original Romanian edition:** [romanian](https://github.com/AlexandruGirlea/python_brasov_2018/tree/romanian)
 
-La baza cursului s-au folosit mai multe materiale educationale precum "Python: Journey from Novice to Expert - Fabrizio Romano, Dusty Phillips, Et al (Packt)"
+## Course contents
 
+| Module | Topics |
+| --- | --- |
+| [1 — Python fundamentals](module_1/) | Data types, operators, functions, namespaces, scopes, and homework |
+| [2 — Containers and libraries](module_2/) | Collections, dictionaries, mutable and immutable objects, imports, and small scripts |
+| [3 — Control flow](module_3/) | Conditions, loops, and iterators |
+| [4 — Working with functions](module_4/) | Arguments, scope, return values, recursion, lambdas, and built-ins |
+| [5 — Comprehensions and generators](module_5/) | Comprehensions, generators, variable scope, and analysis of historical Romanian lottery draws |
+| [6 — Object-oriented Python](module_6/) | Classes, inheritance, properties, decorators, and a custom iterator |
+| [7 — Testing applications](module_7/) | Unit tests, fixtures, assertions, and exception testing |
 
-Daca nu aveti Linux instalat pe PC-ul dumneavoastra, urmati toti pasii de mai jos pentru instalarea sistemului de operare Ubuntu.
+## Browse or run the notebooks
 
-Daca aveti Linux instalat, va rog sa urmati pasii de mai jos pentru setarea mediului de dezvoltare.
+Open any `.ipynb` file on GitHub to read it. To explore locally, the notebooks use Jupyter, NumPy, pandas, and Matplotlib:
 
-### Optiunea 1: Daca PC-ul este suficient de puternic (ex: i5, 8GB RAM) puteti instala VirtualBox
 ```bash
-# descarcati VirtualBox de la link-ul de mai jos
-https://www.virtualbox.org/wiki/Downloads
-# cursantii vor primi pe mail-ul personal un link pentru descarcarea unei masinii virtuale
-# aceasta va fi deschisa cu VirtualBox
-```
-
-### Optiunea 2: Cum instalam Ubuntu de la zero folosind sistemul de operare Windows
-1. Putem da jos imaginea Ubuntu 16.04 de aici:
-```
-# accesati acest URL si alegeti "64-bit PC (AMD64) desktop image"
-http://releases.ubuntu.com/16.04/
-    
-```
-2. Creati un stick bootabil
-```
-# instalati programul Rufus de la link-ul de mai jos
-https://rufus.akeo.ie/
-# dupa instalarea programului, alegeti imaginea cu OS-ul Ubuntu si sitck-ul USB si incepeti procesul de creare
-```
-
-3. Cu stick-ul in PC, reporniti calulcatorul si urmati pasii de instalare indicati de Ubuntu
-```bash
-OBS: in cazul in care Ubuntu nu ruleaza direct la repornirea calculatorului, trebuie sa intrati in BIOS
-si sa setati USB Stick ca primul mediu de bootare
-```
-
-### Optiunea 3: Instalati Ubuntu in paralel cu Windows (doar pentru utilizatori avansati)
-Accesati acest [link](https://www.youtube.com/watch?v=0W7XYAB4cLc) si urmati instructiunile
-
-
-
-### Pasii pentru setarea mediului de dezvoltare in Ubuntu
-```bash
-# deschide terminalul prin apasarea urmatoarelor combinatii de taste
-Ctrl + Alt + T
-
-# updateaza pachetele sistemului de operare
-sudo apt-get update
-sudo apt-get -y upgrade
-
-# instaleaza pip pentru managementul librariilor python
-sudo apt-get install -y python3-pip
-
-# instaleaza diverse librarii de linux necesare mediului de dezvoltare
-sudo apt-get install build-essential libssl-dev libffi-dev python-dev
-
-# instaleaza libraria python pentru crearea si managemetul mediilor de dezvoltare virtuale
-sudo apt-get install -y python3-venv
-
-# ne asifuram ca lucram lucrăm in directorul Home al utilizatorului curent
-cd ~
-
-# vom crea un nou folder in care vom stoca toate mediile de dezvoltare virtuale
-mkdir environments
-
-# vom crea si un folder pentru proiectele la care vom lucra
-cd ~
-mkdir Proiecte
-
-
-# vom instala git pentru versionarea codului
-sudo apt-get install git
-
-# vom instra in folderul de Proiecte
-cd ~/Proiecte
-
-# vom downloda codul pentru cursul Python Brasov 2018
 git clone https://github.com/AlexandruGirlea/python_brasov_2018.git
-
-# pentru updatarea cursurilor vom folosi urmatoarea comanda
-cd ~/Proiecte/python_brasov_2018
-git pull
-
+cd python_brasov_2018
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install jupyter numpy pandas matplotlib
+jupyter notebook
 ```
+
+The original notebooks used Python 3.5 and 3.7. Some APIs reflect that period, and several examples deliberately raise errors to illustrate a concept. This English edition preserves those lessons and clears saved outputs; it is an archive rather than an updated course for current Python releases. The lottery notebook reads `module_5/lottery_numbers.txt` from its own directory.
+
+To run the standalone testing example from the repository root:
+
+```bash
+python -m unittest discover -s module_7/testing
+```
+
+## Course photos
+
+- [AgileHub on LinkedIn](https://www.linkedin.com/posts/agilehub_python-it-comunitate-activity-6508984711979757568-NbfW/)
+- [AgileHub photo album on Facebook](https://www.facebook.com/agilehub/photos/pcb.1030748847087095/1030748753753771/?type=1&theater)
+
+## Acknowledgments
+
+The course drew on several educational resources, including *Python: Journey from Novice to Expert* by Fabrizio Romano, Dusty Phillips, and other contributors (Packt).
